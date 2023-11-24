@@ -20,5 +20,19 @@ class CargosTableSeeder extends Seeder
             'activo' => true,
             'idUsuarioCreacion' => '1'
         ]);
+
+        \App\Models\Cargos::create([
+            'codigo' => '456',
+            'nombre' => 'DIRECTOR DE TI',
+            'activo' => true,
+            'idUsuarioCreacion' => '1'
+        ]);
+
+        \App\Models\Cargos::create([
+            'codigo' => '789',
+            'nombre' => 'DIRECTOR DE TI',
+            'activo' => true,
+            'idUsuarioCreacion' => '1'
+        ]);
     }
 }

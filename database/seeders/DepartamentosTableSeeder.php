@@ -18,5 +18,19 @@ class DepartamentosTableSeeder extends Seeder
             'activo' => true,
             'idUsuarioCreacion' => '1'
         ]);
+
+        \App\Models\Departamentos::create([
+            'codigo' => '123',
+            'nombre' => 'ADMIN',
+            'activo' => true,
+            'idUsuarioCreacion' => '1'
+        ]);
+
+        \App\Models\Departamentos::create([
+            'codigo' => '456',
+            'nombre' => 'SISTEMAS',
+            'activo' => true,
+            'idUsuarioCreacion' => '1'
+        ]);
     }
 }
