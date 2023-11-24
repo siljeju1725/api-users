@@ -15,13 +15,13 @@ class UsersController extends Controller
         return Users::all();
     }
     /**
-     * Store a newly created resource in storage.
+     * Create users
      */
     public function store(Request $request)
     {
 
         $request->validate([
-            'usuario'           => 'required|string',
+            'usuario'            => 'required|string',
             'primerNombre'       => 'required|string',
             'segundoNombre'      => 'required|string',
             'primerApellido'     => 'required|string',
@@ -30,8 +30,9 @@ class UsersController extends Controller
             'idCargo'            => 'required|string'
         ]);
 
-        try {
-            $user = Users::create($request->all());
+
+       try {
+           $user = Users::create($request->all());
             return response()->json($user, 200);
         } catch (\Throwable $th) {
             return response()->json([ 'error' => $th->getMessage()], 500);
