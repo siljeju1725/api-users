@@ -16,4 +16,14 @@ class Users extends Model
                             'idDepartamento',
                             'idCargo'
                         ];
+
+    public function departamentos()
+        {
+            return $this->belongsTo(Departamentos::class);
+        }
+
+    public function cargos()
+    {
+        return $this->belongsTo(Departamentos::class);
+    }
 }
