@@ -12,7 +12,10 @@ class UsersController extends Controller
      */
     public function index()
     {
-        return Users::all();
+        $users = Users::with('cargos')
+                ->with('departamentos')
+                ->get();
+        return $users;
     }
     /**
      * Create users
