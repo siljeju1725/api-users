@@ -23,14 +23,14 @@ class CargosTableSeeder extends Seeder
 
         \App\Models\Cargos::create([
             'codigo' => '456',
-            'nombre' => 'DIRECTOR DE TI',
+            'nombre' => 'ADMIN TI',
             'activo' => true,
             'idUsuarioCreacion' => '1'
         ]);
 
         \App\Models\Cargos::create([
             'codigo' => '789',
-            'nombre' => 'DIRECTOR DE TI',
+            'nombre' => 'ANALISTA DE TI',
             'activo' => true,
             'idUsuarioCreacion' => '1'
         ]);
